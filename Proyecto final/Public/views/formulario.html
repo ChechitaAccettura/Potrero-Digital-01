@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/020c2b5f5e.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../images/list-check-solid.svg">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="formulario1">
+        <header class="tituloDeForm">
+            Suscribite para recibir novedades.
+        </header>
+
+        <form action="/form.php" method="post">
+            <fieldset class="case">
+                <legend> <i class="fa-solid fa-user"></i>  Datos Personales </legend>
+                <label for="name"> Nombres</label> 
+                <input type="text" name="name" required placeholder="Ingrese su nombre"> 
+                <label for="apellido">Apellidos</label> 
+                <input type="text" name="apellido" required placeholder="Ingrese sus apellidos">
+                <label for="cumpleaños">Cumpleaños</label>
+                <input type="date" required>            
+            </fieldset>
+
+            <fieldset class="case">
+                <legend> <i class="fa-solid fa-paper-plane"></i> Contacto y login </legend>
+                <label for="mail">e-mail</label>
+                <input type="email" name="mail" required placeholder="Correo electrónico">
+                <label for="pass">Contraseña</label>
+                <input type="password" name="pass" required placeholder="Password" maxlength="10" minlength="6">
+            </fieldset>
+
+            <fieldset class="case">
+                <label for="modo"> ¿Cuál es tu forma de viaje favorita</label>
+                <select name="modo" id="">
+                    <option value="blank"></option>
+                    <option value="a">Auto</option>
+                    <option value="b">Avion</option>
+                    <option value="c">Colectivo</option>
+                    <option value="d">Tren</option>
+                </select>
+                <br>
+            </fieldset>
+            <fieldset class="case" >
+                <label for="intereses">Intereses</label>
+                <br>
+                Naturaleza<input type="checkbox">
+                Treking<input type="checkbox">
+                Deporte<input type="checkbox">
+                Descanso<input type="checkbox">
+                <br>
+                <label for="comentario"><i class="fa-solid fa-pencil"></i> Comentarios</label>
+                <textarea name="comentario"></textarea>
+                <br>
+            </fieldset>
+            <fieldset class="case">
+                <label for="ingreso">¿Cómo llegaste a este formulario?</label>
+                <input type="text">
+                <label for="satisfaccion">¿Cuánto te gustó esta página? <i class="fa-solid fa-heart"></i></label>
+                <input type="range">
+            </fieldset>                    
+     
+            
+            <button class="boton" type="submit" onclick="alert('Formulario enviado.')" >Enviar Formulario</button>
+            <button class="boton" type="reset" onclick="alert ('Sus datos no han sido enviados, reingrese el formulario.')">Limpiar Formulario</button>
+            <a class="redes" href="../../index.html">Inicio</a>
+            
+        </form>
+
+    </div>
+</body>
+</html>

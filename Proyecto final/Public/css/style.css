@@ -1,0 +1,272 @@
+body {
+    background-color: rgb(194, 206, 175);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+aside {
+    background-color: rgba(0, 0, 0, 0.315);
+    width: 50px;
+    height: 250px;
+    margin: 5px;
+    border-radius: 5px;
+    position: fixed;
+    top: 30%;
+    right: 0%;
+    z-index: 99999;
+    align-items: center;
+}
+
+.net-item {
+    font-size: 40px;
+    color: white;
+    opacity: 50%;
+    margin-left: 7px;
+}
+
+.net-item:hover {
+    opacity: 100%;
+}
+
+.nav-item {
+    border-left: 1px solid slategrey;
+}
+
+.row {
+    margin-top: 20px;
+    padding: 0px;
+    width: 95%;
+}
+.container-fluid {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid slategrey;
+    align-items: center;
+    margin-left: 10px;
+    width: 95%;
+}
+
+.nav-item:hover{
+    font-weight: bold;
+}
+
+.carousel {
+    margin-top: 55px;
+    z-index: 0;
+}
+
+.midlesection {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#BuenosAiresC {
+    align-items: center;
+}
+
+.lead {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+p {
+    text-align: center;
+}
+
+.card  .card-img-top {
+    height: 250px;
+    border-radius: 5px;
+    z-index: 0;
+}
+
+.card2 {
+    height: 250px;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    width: 98%;
+    margin-left: 2px;
+    top: 45%;
+    z-index: 99999;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.678) !important;
+    border: 1px solid rgb(0, 0, 0);
+    color: black;
+    text-shadow: 1px 1px 1px white;
+}
+
+.card .card-img-top:hover  {
+    filter: grayscale(100%);
+
+}
+
+.card:hover .btn-primary {
+    display: block;
+    position: absolute;
+    z-index: 99999;
+    border: 2px solid white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.col-2 {
+    margin: 20px;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 200px;
+    margin: 100px;
+    margin-bottom: 20px;
+}
+
+.redes {
+    margin-left: 150px;
+}
+
+.col-4 {
+    background-color: rgba(0, 0, 0, 0.322);
+    justify-items: center;
+}
+
+.carousel-indicators a >img{
+    border: 2px solid white;
+    margin-top: 50px;
+}
+
+.carousel-item img {
+    object-fit:contain;
+}
+
+h3{
+    font-size: 20px;
+    color:darkolivegreen;
+}
+
+.modal ul li, .modal p{
+    list-style-type: none;
+    margin: 0;
+    font-size: 12px;
+}
+
+.precio{
+    font-size: 25px !important;
+    color: red;
+    font-weight: bold;
+}
+footer {
+    background-color: rgba(25, 133, 133, 0.466);
+    justify-content: center;
+}
+
+footer .row {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    justify-content: center;
+}
+
+footer .row ul {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+footer .row ul li {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0px 15px 0px 15px;
+}
+
+footer img {
+    width: 150px;
+    margin-right: 15px;
+}
+
+.redes {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+}
+
+.redes:hover {
+    color: white;
+    text-decoration: underline;
+    text-shadow: 1px 1px 1px black;
+}
+
+.tituloDeForm {
+    text-align: center;
+    clear:both !important;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.formulario1{
+    margin: 50px;
+    font-family: 'Lumanosimo', cursive;
+    text-shadow: 1px 1px 1px white;
+}
+
+.case {
+    margin-top: 20px;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+.boton {
+    padding: 10px;
+    font-size: 17px;
+    margin: 15px;
+    border-radius: 0px 15px 0px 15px;
+    background-color: rgb(168, 233, 190);
+}
+
+.boton:hover {
+    color:white;
+    background-color: rgb(68, 95, 77);
+    box-shadow: 2px 2px 2px white;
+}
+
+/* media */
+@media (max-width: 780px) { 
+    .formulario1 {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .lead{
+        font-size: 20px;
+    }
+    .none {
+        display: none;
+    }
+
+    footer{
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 560px) {
+    .formulario1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .case{
+        width: 100%;
+    }
+}
+
+@media (max-width: 330px) {
+
+}
