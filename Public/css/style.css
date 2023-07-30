@@ -162,12 +162,16 @@ p {
     width: 98%;
     margin-left: 2px;
     top: 45%;
-    z-index: 99999;
+    z-index: 99997;
     display: none;
     background-color: rgba(255, 255, 255, 0.678) !important;
     border: 1px solid rgb(0, 0, 0);
     color: black;
     text-shadow: 1px 1px 1px white;
+}
+
+.modal {
+    z-index: 99998;
 }
 
 .card .card-img-top:hover  {
