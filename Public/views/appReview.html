@@ -3,10 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../images/medapps.svg">
+    <script src="https://kit.fontawesome.com/020c2b5f5e.js" crossorigin="anonymous"></script>
     <title>Recomendaciones para viajeros</title>
 </head>
 <body>
-    
+    <div>
+        <header>
+            <hr> <p class="lead"> <img src="../images/umbrella-beach-solid.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"> Aplicaciones recomendadas.  </p> <hr>
+        </header>
+    </div>
+    <div class="row">
+        <div class="col-sm appReview">
+            <h5>Google Maps</h5>
+            <div class="row">
+                <div class="col-sm"><img src="../images/googleMaps.png" class="img-fluid" alt="google"></div>
+                <div class="col-sm">La clásica aplicación de mapas que todos conocemos. 
+                    <button class="boton" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                        Conocé mas
+                    </button>    
+                    </div>
+            </div>
+        </div>
+
+        <div class="col-sm appReview">
+            <h5>Caravanya</h5>
+            <div class="row">
+                <div class="col-sm"> <img src="../images/caravanya.jpeg" class="img-fluid" alt="caravanya"></div>
+                <div class="col-sm">App exclusiva para campistas y amantes de la naturaleza.
+                    <button class="boton" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop1" aria-controls="staticBackdrop">
+                        Conocé mas
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-sm appReview">
+            <h5>iOverlander</h5>
+            <div class="row">
+                <div class="col-sm"><img src="../images/iOverLander.jpeg" class="img-fluid" alt="overlander"></div>
+                <div class="col-sm">App para quienes viajan en Motorhome, campistas y más.
+                    <button class="boton" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop2" aria-controls="staticBackdrop">
+                        Conocé mas
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <hr><a class="redes" target="_blank" href="../../index.html"> <strong><i class="fa-solid fa-house"></i>Volver al Inicio</strong></a><hr>
+        <p><i class="fa-regular fa-registered"></i>Tienda Fly - Todos los derechos reservados</p>
+        <a class="redes" target="_blank" href="https://www.linkedin.com/in/cecilia-accettura-b24900127/"> By <i class="fa-brands fa-linkedin"></i>Cecilia Accettura</a>
+    </footer>
+
+    <!-- offCanvas--> 
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="staticBackdropLabel">Google Maps</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                <hr>También es importante que sepas que acá no solamente podés ver las rutas, sino también el relieve, fotos 360, recomendaciones de lugares como restaurantes y atracciones. También podés dejar tu recomendación, foto y opinión. Esto ayuda a mucha gente a decidir donde ir. <hr>
+                <br>
+                <img class="img-fluid" src="../images/maps2.jpg" alt="maps2">
+                <hr>
+                <a class="redes" target="_blank" href="https://www.google.com/maps/?hl=es"><strong>Explorar</strong></a>
+                
+            </div>
+        </div>
+    </div>
+    <!-- offCanvas1--> 
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop1" aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="staticBackdropLabel">Caravanya</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                <hr>Caravanya no es otra app para encontrar campings, es LA app.
+                Campings, normales o para autocaravanas, lugares para acampar y aparcar libremente, todo con información detallada y fotos ¡en nueve idiomas diferentes!<hr>
+                <br>
+                <iframe width="100%" src="https://www.youtube.com/embed/hZBdJEP6cDY" title="CARAVANYA - Die Stellplatz-App: Benutzeroberfläche und Filter kurz vorgestellt" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <hr>
+                <a class="redes" target="_blank" href="https://www.caravanya.com/es/la-app-para-acampar/"><strong>Explorar</strong></a>
+                
+            </div>
+        </div>
+    </div>
+    <!-- offCanvas2--> 
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop2" aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="staticBackdropLabel">iOverLander</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                <hr>iOverlander es una base de datos de lugares para overlanders y viajeros. Incluye campamentos, hoteles, restaurantes, mecánica, agua, llenado de propano y otras categorías. Los detalles se enumeran para cada lugar, incluidos los servicios, las fotos, la fecha de la última visita y las coordenadas del GPS.<hr>
+                <br>
+                <img class="img-fluid" src="../images/iOverLander2.webp" alt="overlander2">
+                <hr>
+                <a class="redes" target="_blank" href="https://play.google.com/store/apps/details?id=com.samchristiansen.ioverlander.droid&hl=es_AR&gl=US&pli=1"><strong>Explorar</strong></a>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
