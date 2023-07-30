@@ -332,6 +332,7 @@ input {
     }
     .btn-primary{
         display: block;
+        z-index: 99998;
     }
     .container-van {
         display: flex;
