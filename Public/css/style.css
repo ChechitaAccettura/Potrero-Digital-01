@@ -326,7 +326,9 @@ input {
     .none {
         display: none;
     }
-
+    .btn-primary{
+        display: block;
+    }
     .container-van {
         display: flex;
         flex-wrap: wrap;
